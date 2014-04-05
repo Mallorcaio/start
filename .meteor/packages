@@ -4,11 +4,15 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
-preserve-inputs
 less
 collection2
-iron-router
 semantic-ui
 coffeescript
+accounts-base
+accounts-ui
+autopublish
+accounts-twitter
+accounts-facebook
+accounts-password
+iron-router

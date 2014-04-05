@@ -3,7 +3,7 @@
 Router.configure
 
   #declaramos que template utilizar para el layout global de nuestra pagina
-  layoutTemplate: "layout"
+  layoutTemplate: "kevin"
 
   #declaramos los template que tienen que ser fijos entre diferentes paginas (header/footer es tipico)
   yieldTemplates:
@@ -26,6 +26,33 @@ Router.map ->
     template: "home"
 
 
+  @route "test",
+    path: '/palma'
+    template: 'ejemplo'
+    before: ->
+      Meteor.subscribe "users"
+
+
+
+
+
+
+  @route "users",
+    path: '/misusuarios'
+    template: 'usuarios'
+    before: ->
+      Meteor.subscribe "users"
+
+
+
+
+
+
+  @route "singleUser",
+    path:'/users/:name'
+    template: 'singleUser'
+    data : ->
+        name : this.params.name
 
 
 

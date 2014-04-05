@@ -25,18 +25,18 @@
 
 <!-- Definimos la estrucura de la pagina global = el Layout -->
 
-<template name="layout">
+<template name="kevin">
 
 <!--  aqui es el header  -->
-{{yield 'header'}}
+{{> yield region='header'}}
 
 
 <!-- aqui esta todo lo que hay en medio -->
-{{yield}}
+{{> yield}}
 
 
 <!-- aqui es el footer -->
-{{yield 'footer'}}
+{{> yield region='footer'}}
 
 
  </template>
